@@ -1,10 +1,9 @@
 import http from 'http';
 
 let app = require('./server').default;
+let currentApp = app;
 
 const server = http.createServer(app);
-
-let currentApp = app;
 const post = process.env.PORT || 3000;
 
 server.listen(post, error => {
