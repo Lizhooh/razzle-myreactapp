@@ -1,0 +1,30 @@
+{
+  "name": "my-razzle-app",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "server": "razzle build && node build/server",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.6",
+    "is-env": "^2.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "razzle": "2.4.1",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "4.3.1",
+    "redux": "^4.0.1",
+    "redux-starter-kit": "^0.4.3",
+    "redux-thunk": "^2.3.0",
+    "serialize-javascript": "^1.6.1",
+    "styled-components": "^3.4.10"
+  }
+}
